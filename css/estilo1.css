@@ -9,6 +9,8 @@
     width: 100%;
     height: 100px;
     background: lightblue;
+    font-size:20px;
+    font-weight:italic;
 }
 
 #contec{
@@ -21,7 +23,7 @@
     width: 20%;
     overflow: hidden;
     background: lightseagreen;
-    float:left;
+    float:left;    
 }
 
 #contenido{
@@ -35,6 +37,7 @@
     width: 100%;
     height: 100%;
     background: darkgray;
+    font-family: 'Gentium Book Basic';
 }	
 
 .cajas {
@@ -45,11 +48,60 @@
 	border-color:red;
 }
 
+/* menu actua como padre i li como hijo para agrupar*/
+#menu li:hover{
+	color:darkgreen;
+}	
+
+.degradadoroja{
+	background: rgba(169,3,41,1);
+	background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(27%, rgba(143,2,34,1)), color-stop(35%, rgba(109,0,25,1)), color-stop(43%, rgba(109,0,25,1)), color-stop(63%, rgba(109,0,25,1)));
+	background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: -o-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: linear-gradient(to right, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );	
+}
+
+.degradoverde{
+	background: rgba(98,125,77,1);
+	background: -moz-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(13%, rgba(98,125,77,1)), color-stop(32%, rgba(98,125,77,1)), color-stop(80%, rgba(51,78,28,1)), color-stop(100%, rgba(31,59,8,1)));
+	background: -webkit-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: -o-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: -ms-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1 );
+}
+
+.borde{
+	border-radius: 7px 63px 92px 27px;
+	-moz-border-radius: 7px 63px 92px 27px;
+	-webkit-border-radius: 7px 63px 92px 27px;
+	border: 8px solid #000000;
+}
 
 @media screen and (max-width: 992px) {
   .column {
     width: 50%;
   }
+}
+
+/* insersion de fuentes*/
+
+@font-face {
+  font-family: 'Gentium Book Basic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Gentium Book Basic Bold'), local('GentiumBookBasic-Bold'), url(../fonts/GentiumBookBasic-Bold.ttf) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+a {
+  text-decoration: none;	
 }
 
 

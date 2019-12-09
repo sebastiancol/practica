@@ -5,20 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DISEÑO INICIAL</title>
 <link rel="stylesheet" href="css/estilo1.css" type="text/css">
-<!--<link rel="stylesheet" href="css/estilo2.css" type="text/css">-->
+<script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+<script src="js/Mi_Logica.js" type="text/javascript"></script>
+
 </head>
 <body>
 
     <div id="pagina">
-        <div id="enca">
+        <div id="enca" class="borde">
 		<h2>USO DE DIV</h2>
 		</div>
-        <div id="contec">
+        <div id="contec" class="degradadoroja">
                 <div id="menu">
                     <h1>menu</h1>
+                    	<ul>
+                       		<li><a onclick="traermercurio()">Mercurio</a></li>
+                       		<li><a onclick="traervenus()">Venus</a></li>
+                       		<li><a onclick="traertierra()">Tierra</a></li>
+                       </ul>
                 </div>   
                 <div id="contenido">
-                    <h1>contenido</h1>
+                    <center>
+                    <h1>Sistema Solar</h1>
+                    <img alt="sistema solar" src="imagenes/sissolar.png"  >
+                    </center>                       
                 </div>
         </div>
         <div id="pie">                       
