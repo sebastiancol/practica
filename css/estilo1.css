@@ -82,6 +82,34 @@
 	border: 8px solid #000000;
 }
 
+.col-12{
+	widh:100%;
+	overflow: hidden;
+	border-color:red;
+}
+
+.col-4{
+	widh:33.33%;
+	overflow: hidden;
+	border-color:red;
+}
+
+.col-6{
+	widh:50%;
+	overflow: hidden;
+	border-color:red;
+}
+
+.label{
+	float:left;
+}
+
+.input{
+	float:right;
+}
+
+
+
 @media screen and (max-width: 992px) {
   .column {
     width: 50%;
