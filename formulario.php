@@ -2,64 +2,95 @@
     <h1>formulario de control de registros</h1>
     
     <div class="col-12">
+    
      	<div class="col-4" style="float:left;">
-     		<div class="col-12">
-         		<div class="label">
-         			<label>CC</label>
-         		</div>
-         		<div class="input">
-         			<input TYPE="number" ID="CC" NAME="CC" VALUE=""/>
-         		</div>
-     		</div>
-     		
-     		<div class="col-12">
-         		<div class="label">NOMBRE</div>
-         		<div class="input">
-         			<input type="text" id="nom" NAME="nom," VALUE=""/>
-         		</div>
-     		
-     		</div>
-     		
-     		<div>APELLIDO</div>
-     		<div>
-     			<input type="text" id="ape" NAME="ape" VALUE=""/>
-     		</div>
-     		<div>CORREO</div>
-     		<div>
-     			<input type="text" id="correo" NAME="correo" VALUE=""/>
-     		</div>
-     		<div>TELEFONO</div>
-     		<div>
-     			<input type="number" id="tel" NAME="tel" VALUE=""/>
-     		</div>
-     		<div>CIUDAD</div>
-     		<div>
-     			<select id="ciudad" name="ciudad">
-     				<option value="" selected>seleccione
-     				<option value="1">BOGOTA
-     				<option value="2">CALI
-     				<option value="3">MEDELLIN
-     			</select>
-     		</div>
-     		<div>GENERO</div>
-     		<div>
-     			<label>Femenino</label> 
-     			<input TYPE="RADIO" ID="GENERO" NAME="GENERO"/>
-     			<label>Masculino</label> 
-     			<input TYPE="RADIO" ID="GENERO" NAME="GENERO"/>
-     			<label>LGTBI</label> 
-     			<input TYPE="RADIO" ID="GENERO" NAME="GENERO"/>
-     		</div>
-     		<div>
-     			<button>Registrar</button>
-     			<button>Cancelar</button>
-     		</div>
-     		
+     		<form id="formRegistro" name="formRegistro">
+     			<fieldset>
+     				<legend>INGRESO DE DATOS:</legend>
+             		<div class="col-12">
+                 		<div class="label">
+                 			<label>CC</label>
+                 		</div>
+                 		<div class="input">
+                 			<input type="number" ID="CC" NAME="CC" VALUE="" placeholder="Digite cedula"/>
+                 		</div>
+             		</div>
+             		
+             		<div class="col-12">
+                 		<div class="label">NOMBRE</div>
+                 		<div class="input">
+                 			<input type="text" id="nom" NAME="nom" VALUE="" placeholder="Digite nombre"/>
+                 		</div>
+             		
+             		</div>
+             		
+             		<div class="col-12">
+                 		<div class="label">APELLIDO</div>
+                 		<div class="input">
+                 			<input type="text" id="ape" NAME="ape" VALUE="" placeholder="Digite apellido"/>
+                 		</div>
+             		</div>
+             		
+             		<div class="col-12">
+                 		<div class="label">CORREO</div>
+                 		<div class="input">
+                 			<input type="text" id="correo" NAME="correo" VALUE="" placeholder="Digite correo"/>
+                 		</div>
+             		</div>
+             		
+             		<div class="col-12">
+                 		<div class="label">TELEFONO</div>
+                 		<div class="input">
+                 			<input type="number" id="tel" NAME="tel" VALUE="" placeholder="Digite telefono celular"/>
+                 		</div>
+             		</div>
+             		
+             		<div class="col-12">
+                 		<div class="label">CIUDAD</div>
+                 		<div class="input">
+                 			<select id="ciudad" name="ciudad">
+                 				<option value="" selected>seleccione
+                 				<option value="1">BOGOTA
+                 				<option value="2">CALI
+                 				<option value="3">MEDELLIN
+                 			</select>
+                 		</div>
+             		</div>
+             		
+             		<div class="col-12">
+                 		<div class="label">GENERO</div>
+                 		<div class="input">
+                 			<label>Femenino</label> 
+                 			<input TYPE="RADIO" ID="GENERO" NAME="GENERO" value="1"/>
+                 			<label>Masculino</label> 
+                 			<input TYPE="RADIO" ID="GENERO" NAME="GENERO" value="2"/>
+                 			<label>LGTBI</label> 
+                 			<input TYPE="RADIO" ID="GENERO" NAME="GENERO" value="3"/>
+                 		</div>
+             		</div>
+             		
+             		<div>
+             			<button type="submit">Registrar</button>
+             			<button>Cancelar</button>
+             		</div>
+         		</fieldset>
+     		</form>
      		
      	</div>
      	
      	<div class="col-6" style="float:right;">
-     	
+     		<div class="col-12">
+     			<button>TODOS</button>
+     			<button>FEMENINO</button>
+     			<button>MASCULINO</button>
+     			<button>LGTBI</button>
+     			<select id="ciudad" name="ciudad">
+         				<option value="" selected>seleccione
+         				<option value="1">BOGOTA
+         				<option value="2">CALI
+         				<option value="3">MEDELLIN
+         		</select>	
+     		</div>
      	</div>
      	
     </div>

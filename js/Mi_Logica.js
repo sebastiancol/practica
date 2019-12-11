@@ -79,9 +79,53 @@ $(document).ready(function(){
 		var url = "formulario.php";
 		var parametros = "acceso=true";
 		var metodo=function (datos){
-			$ ("#contenido").html(datos);
-		};
-		
+			$("#contenido").html(datos);
+			
+			$("#formRegistro").validate({
+				
+				rules:{
+					CC:{
+						required:true,
+						number:true,
+						digit:true
+					},
+					nom:{
+						required:true,
+						rangelenght:[3,70]
+					},
+					ape:{
+						required:true,
+						rangelenght:[3,70]
+					},
+					correo:{
+						required:true,
+						email:true
+					},
+					telefono:{
+						required:true,
+						number:true
+					},
+					
+					
+				}
+				
+				
+			});
+				
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		};		
 		fajax(url,parametros,metodo);
 	}
 	

@@ -1,3 +1,5 @@
+
+/*id pagina*/
 #pagina{
     width: 1024px;
     overflow: hidden;
@@ -5,6 +7,7 @@
     top: 0 px;
 }
 
+/*id encabezado*/
 #enca{
     width: 100%;
     height: 100px;
@@ -13,12 +16,14 @@
     font-weight:italic;
 }
 
+/*id contenido*/
 #contec{
     width: 100%;
     overflow: hidden;
     background: lightgreen;
 }
 
+/*id menu contenido interno*/
 #menu{
     width: 20%;
     overflow: hidden;
@@ -26,6 +31,7 @@
     float:left;    
 }
 
+/*id contenido interno*/
 #contenido{
     width: 80%;
     overflow: hidden;
@@ -33,6 +39,7 @@
     float:right;
 }
 
+/*pie de pagina*/
 #pie {
     width: 100%;
     height: 100%;
@@ -40,80 +47,13 @@
     font-family: 'Gentium Book Basic';
 }	
 
+/*clase cajas*/
 .cajas {
     width: 25%;
     background: greenyellow;
 	float:left;
 	border-style:dashed;
 	border-color:red;
-}
-
-/* menu actua como padre i li como hijo para agrupar*/
-#menu li:hover{
-	color:darkgreen;
-}	
-
-.degradadoroja{
-	background: rgba(169,3,41,1);
-	background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(27%, rgba(143,2,34,1)), color-stop(35%, rgba(109,0,25,1)), color-stop(43%, rgba(109,0,25,1)), color-stop(63%, rgba(109,0,25,1)));
-	background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
-	background: -o-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
-	background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
-	background: linear-gradient(to right, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );	
-}
-
-.degradoverde{
-	background: rgba(98,125,77,1);
-	background: -moz-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(13%, rgba(98,125,77,1)), color-stop(32%, rgba(98,125,77,1)), color-stop(80%, rgba(51,78,28,1)), color-stop(100%, rgba(31,59,8,1)));
-	background: -webkit-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
-	background: -o-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
-	background: -ms-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
-	background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1 );
-}
-
-.borde{
-	border-radius: 7px 63px 92px 27px;
-	-moz-border-radius: 7px 63px 92px 27px;
-	-webkit-border-radius: 7px 63px 92px 27px;
-	border: 8px solid #000000;
-}
-
-.col-12{
-	widh:100%;
-	overflow: hidden;
-	border-color:red;
-}
-
-.col-4{
-	widh:33.33%;
-	overflow: hidden;
-	border-color:red;
-}
-
-.col-6{
-	widh:50%;
-	overflow: hidden;
-	border-color:red;
-}
-
-.label{
-	float:left;
-}
-
-.input{
-	float:right;
-}
-
-
-
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%;
-  }
 }
 
 /* insersion de fuentes*/
@@ -127,9 +67,99 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
+/*estilo de  links*/
 a {
   text-decoration: none;	
+}
+
+
+
+/* menu actua como padre i li como hijo para agrupar*/
+#menu li:hover{
+	color:darkgreen;
+}	
+
+/*degrado color rojo 
+ no funciona
+*/
+.degradadoroja{
+	background: rgba(169,3,41,1);
+	background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(27%, rgba(143,2,34,1)), color-stop(35%, rgba(109,0,25,1)), color-stop(43%, rgba(109,0,25,1)), color-stop(63%, rgba(109,0,25,1)));
+	background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: -o-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	background: linear-gradient(to right, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 27%, rgba(109,0,25,1) 35%, rgba(109,0,25,1) 43%, rgba(109,0,25,1) 63%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );	
+}
+
+/*degrado color verde 
+ no funciona
+*/
+.degradoverde{
+	background: rgba(98,125,77,1);
+	background: -moz-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(13%, rgba(98,125,77,1)), color-stop(32%, rgba(98,125,77,1)), color-stop(80%, rgba(51,78,28,1)), color-stop(100%, rgba(31,59,8,1)));
+	background: -webkit-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: -o-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: -ms-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(98,125,77,1) 13%, rgba(98,125,77,1) 32%, rgba(51,78,28,1) 80%, rgba(31,59,8,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1 );
+}
+
+/*clase borde*/
+.borde{
+	border-radius: 7px 63px 92px 27px;
+	-moz-border-radius: 7px 63px 92px 27px;
+	-webkit-border-radius: 7px 63px 92px 27px;
+	border: 8px solid #000000;
+}
+
+/*clase columna 12*/
+.col-12{
+	widh:100%;
+	overflow: hidden;
+	border-color:red;
+}
+
+/*clase columna 4*/
+.col-4{
+	widh:33.33%;
+	overflow: hidden;
+	border-color:red;
+}
+
+/*clase columna 6*/
+.col-6{
+	widh:50%;
+	overflow: hidden;
+	border-color:red;
+}
+
+/*clase label*/
+.label{
+	float:left;
+}
+
+/*clase input con boton imput*/
+.input imput{
+	float:right;
+	border-radius:10%;
+}
+
+
+/*clase input con boton select*/
+.input select{
+	float:right;
+	border-radius:10%;
+}
+
+/* media querys*/
+
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
 }
 
 
