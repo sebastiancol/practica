@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 	
+	var edificio = new Array ();
 
 	/*
 	 * url: es donde voy a ir
@@ -81,13 +82,18 @@ $(document).ready(function(){
 		var metodo=function (datos){
 			$("#contenido").html(datos);
 			
+			$("#listadoFull").click(function(){
+				var limite = edificio.lenght;
+				alert(limite);
+			});
+			
 			$("#formRegistro").validate({
 				
 				rules:{
 					CC:{
 						required:true,
 						number:true,
-						digit:true
+						digits:true
 					},
 					nom:{
 						required:true,
@@ -101,29 +107,51 @@ $(document).ready(function(){
 						required:true,
 						email:true
 					},
+					correo1:{
+						equalTo:"#correo",
+						
+					},									
 					telefono:{
 						required:true,
-						number:true
+						number:true,
+						digit:true,
+						rangelenght:[7,10]
 					},
+					ciudad:{
+						required:true,
+						number:true						
+					},
+					genero:{
+						required:true,
+						number:true						
+					}
 					
 					
-				}
-				
-				
-			});
-				
+				},
+				messages:{
+					CC:{
+						digits:"uppss no puede tener ni comas, ni puntos"
+					}
+				},
+				submitHandler:function(){
+					//alert($("#formRegistro").serialize());
+					
+					var persona={
+						cc: $("#CC").val(),
+						nom: $("#nom").val(),
+						ape: $("#ape").val(),
+						correo: $("#correo").val(),
+						tel: $("#tel").val(),
+						ciudad: $("#ciudad").val(),
+						genero: $("#genero").val()
+					};
+					edificio.push(persona);
+					$("#limpiar").trigger("click");
+						
 	
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+					
+				}						
+			});
 			
 		};		
 		fajax(url,parametros,metodo);
@@ -144,6 +172,10 @@ $(document).ready(function(){
 	$("#formulario").click(function(){
 		formulario();
 	});
+	
+	
+	
+	
 });
 
 

@@ -39,6 +39,13 @@
              		</div>
              		
              		<div class="col-12">
+                 		<div class="label">CONFICORREO</div>
+                 		<div class="input">
+                 			<input type="text" id="correo1" NAME="correo1" VALUE="" placeholder="Confirme correo"/>
+                 		</div>
+             		</div>
+             		
+             		<div class="col-12">
                  		<div class="label">TELEFONO</div>
                  		<div class="input">
                  			<input type="number" id="tel" NAME="tel" VALUE="" placeholder="Digite telefono celular"/>
@@ -61,17 +68,17 @@
                  		<div class="label">GENERO</div>
                  		<div class="input">
                  			<label>Femenino</label> 
-                 			<input TYPE="RADIO" ID="GENERO" NAME="GENERO" value="1"/>
+                 			<input TYPE="RADIO" ID="genero" NAME="genero" value="1"/>
                  			<label>Masculino</label> 
-                 			<input TYPE="RADIO" ID="GENERO" NAME="GENERO" value="2"/>
+                 			<input TYPE="RADIO" ID="genero" NAME="genero" value="2"/>
                  			<label>LGTBI</label> 
-                 			<input TYPE="RADIO" ID="GENERO" NAME="GENERO" value="3"/>
+                 			<input TYPE="RADIO" ID="genero" NAME="genero" value="3"/>
                  		</div>
              		</div>
              		
              		<div>
              			<button type="submit">Registrar</button>
-             			<button>Cancelar</button>
+             			<button type="reset" id="limpiar">Cancelar</button>
              		</div>
          		</fieldset>
      		</form>
@@ -80,7 +87,7 @@
      	
      	<div class="col-6" style="float:right;">
      		<div class="col-12">
-     			<button>TODOS</button>
+     			<button type="button" id="listadoFull">TODOS</button>
      			<button>FEMENINO</button>
      			<button>MASCULINO</button>
      			<button>LGTBI</button>

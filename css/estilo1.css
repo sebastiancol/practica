@@ -154,6 +154,21 @@ a {
 	border-radius:10%;
 }
 
+/*
+CLASE ERRORR
+*/
+.error{
+	color:red;
+}
+
+/*
+estilo fielset
+*/
+fieldset{
+	border-style:dashed;
+	border-color:darkblue;
+}
+
 /* media querys*/
 
 @media screen and (max-width: 992px) {
