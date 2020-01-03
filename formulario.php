@@ -4,7 +4,7 @@
     <div class="col-12">
     
      	<div class="col-4" style="float:left;">
-     		<form id="formRegistro" name="formRegistro">
+     		<form id="formRegistro" name="formRegistro" >
      			<fieldset>
      				<legend>INGRESO DE DATOS:</legend>
              		<div class="col-12">
@@ -77,7 +77,7 @@
              		</div>
              		
              		<div>
-             			<button type="submit">Registrar</button>
+             			<button type="submit" value="enviar">Registrar</button>
              			<button type="reset" id="limpiar">Cancelar</button>
              		</div>
          		</fieldset>

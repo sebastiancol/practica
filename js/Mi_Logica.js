@@ -9,6 +9,7 @@ $(document).ready(function(){
 	 * metodo: que quiero hacer con la respuesta
 	 * 
 	 */
+
 	function fajax(URL,parametros,metodo){
 		$.ajax({
 			url: URL,
@@ -25,6 +26,14 @@ $(document).ready(function(){
 		});
 		
 	}
+
+	/**
+	 * evento
+	 */
+
+	function stopDefAction(evt) {
+		evt.preventDefault();
+	  }
 
 	/**
 	 * 
@@ -79,13 +88,19 @@ $(document).ready(function(){
 	function formulario (){
 		var url = "formulario.php";
 		var parametros = "acceso=true";
+		
 		var metodo=function (datos){
 			$("#contenido").html(datos);
 			
 			$("#listadoFull").click(function(){
 				var limite = edificio.lenght;
-				alert(limite);
+				for (var i=0;i<limite;i++){
+					var tmp = edificio[i];
+					console.table(tmp);
+
+				}
 			});
+			
 			
 			$("#formRegistro").validate({
 				
@@ -108,8 +123,7 @@ $(document).ready(function(){
 						email:true
 					},
 					correo1:{
-						equalTo:"#correo",
-						
+						equalTo:"#correo"						
 					},									
 					telefono:{
 						required:true,
@@ -134,21 +148,46 @@ $(document).ready(function(){
 					}
 				},
 				submitHandler:function(){
-					//alert($("#formRegistro").serialize());
-					
+					//alert($("#formRegistro").serialize());ç+
+
+					// objeto js
 					var persona={
-						cc: $("#CC").val(),
-						nom: $("#nom").val(),
-						ape: $("#ape").val(),
+						cc:     $("#CC").val(),
+						nom:    $("#nom").val(),
+						ape:    $("#ape").val(),
 						correo: $("#correo").val(),
-						tel: $("#tel").val(),
+						tel:    $("#tel").val(),
 						ciudad: $("#ciudad").val(),
 						genero: $("#genero").val()
 					};
-					edificio.push(persona);
+
+					//objeto json
+
+					var datos, x, i, dbParam;
+					
+
+					datos ={
+						"cc" : "#CC",
+						"nom": "#nom",
+						"ape": "#ape",
+						"correo": "#correo",
+						"tel": "#tel",
+						"ciudad":"#ciudad",
+						"genero":"#genero"
+					};
+
+					dbParam = JSON.stringify(datos);
+
+					datos.cc,datos.nom,datos.ape,datos.correo,datos.tel,datos.ciudad,datos.genero;
+
+						for (x in datos) {
+							//alert("los datos son"+ x );
+							edificio.push(x);
+						}
+					
+					//edificio.push(datos);
+
 					$("#limpiar").trigger("click");
-						
-	
 					
 				}						
 			});
